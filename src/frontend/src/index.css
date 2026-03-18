@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/assets/fonts/PlayfairDisplay.woff2") format("woff2");
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Navy primary palette */
+    --background: 0.98 0.002 240;
+    --foreground: 0.15 0.04 255;
+
+    --card: 0.99 0.001 240;
+    --card-foreground: 0.15 0.04 255;
+
+    --popover: 0.99 0.001 240;
+    --popover-foreground: 0.15 0.04 255;
+
+    /* Deep navy primary */
+    --primary: 0.22 0.07 258;
+    --primary-foreground: 0.98 0.002 240;
+
+    /* Light gray secondary */
+    --secondary: 0.94 0.008 255;
+    --secondary-foreground: 0.22 0.07 258;
+
+    --muted: 0.94 0.008 255;
+    --muted-foreground: 0.48 0.02 258;
+
+    /* Red accent */
+    --accent: 0.55 0.22 25;
+    --accent-foreground: 0.98 0.002 240;
+
+    --destructive: 0.55 0.22 27;
+    --destructive-foreground: 0.98 0.002 240;
+
+    --border: 0.88 0.01 258;
+    --input: 0.88 0.01 258;
+    --ring: 0.22 0.07 258;
+    --radius: 0.25rem;
+
+    --chart-1: 0.62 0.19 258;
+    --chart-2: 0.55 0.22 25;
+    --chart-3: 0.55 0.14 175;
+    --chart-4: 0.65 0.17 30;
+    --chart-5: 0.48 0.14 290;
+
+    --sidebar: 0.99 0.001 240;
+    --sidebar-foreground: 0.15 0.04 255;
+    --sidebar-primary: 0.22 0.07 258;
+    --sidebar-primary-foreground: 0.98 0.002 240;
+    --sidebar-accent: 0.94 0.008 255;
+    --sidebar-accent-foreground: 0.22 0.07 258;
+    --sidebar-border: 0.88 0.01 258;
+    --sidebar-ring: 0.22 0.07 258;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+@layer utilities {
+  .section-alt {
+    background-color: oklch(0.955 0.006 255);
+  }
+  .section-dark {
+    background-color: oklch(0.18 0.06 258);
+    color: oklch(0.96 0.005 240);
+  }
+  .section-navy {
+    background-color: oklch(0.22 0.07 258);
+    color: oklch(0.96 0.005 240);
+  }
+  .text-accent-gold {
+    color: oklch(0.55 0.22 25);
+  }
+  .bg-accent-gold {
+    background-color: oklch(0.55 0.22 25);
+  }
+  .border-accent-gold {
+    border-color: oklch(0.55 0.22 25);
+  }
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+}

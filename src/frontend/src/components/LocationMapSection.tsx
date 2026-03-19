@@ -13,7 +13,7 @@ export default function LocationMapSection() {
         <div className="rounded-xl overflow-hidden shadow-xl border border-gray-200">
           <iframe
             title="Ayan Tech Solutions Office Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0073765846784!2d80.21823007480432!3d13.020872287295734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267ba64e66baf%3A0x5cd2e4e0e47c2527!2sAnna%20Salai%2C%20Little%20Mount%2C%20Saidapet%2C%20Chennai%2C%20Tamil%20Nadu%20600015!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+            src="https://maps.google.com/maps?q=No+184-187+Temple+Steps+Block+3+9th+Floor+Anna+Salai+Little+Mount+Saidapet+Chennai+600015&output=embed&z=17&markers=color:red%7C13.0209,80.2205"
             width="100%"
             height="450"
             style={{ border: 0 }}
@@ -25,7 +25,7 @@ export default function LocationMapSection() {
 
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-600">
           <a
-            href="https://www.google.com/maps/dir/?api=1&destination=Anna+Salai+Little+Mount+Saidapet+Chennai+600015"
+            href="https://www.google.com/maps/search/?api=1&query=No+184-187+Temple+Steps+Block+3+9th+Floor+Anna+Salai+Little+Mount+Saidapet+Chennai+600015"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-md font-medium transition-colors duration-200"

@@ -1,6 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState } from "react";
+import AboutUsSection from "./components/AboutUsSection";
 import CareersBanner from "./components/CareersBanner";
 import CaseStudiesSection from "./components/CaseStudiesSection";
 import ContactModal from "./components/ContactModal";
@@ -28,6 +29,7 @@ function AppContent() {
       <main>
         <HeroSection />
         <StatsBar />
+        <AboutUsSection />
         <ServicesSection />
         <PromoVideoSection />
         <CaseStudiesSection caseStudies={caseStudies} />

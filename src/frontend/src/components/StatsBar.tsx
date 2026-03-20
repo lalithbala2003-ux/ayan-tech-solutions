@@ -2,8 +2,8 @@ import { motion } from "motion/react";
 
 const stats = [
   { value: "18+", label: "Years of Experience" },
-  { value: "800+", label: "Projects Delivered" },
-  { value: "50+", label: "Enterprise Clients" },
+  { value: "60+", label: "Projects Delivered" },
+  { value: "20+", label: "Enterprise Clients" },
   { value: "4", label: "Core Service Areas" },
 ];
 

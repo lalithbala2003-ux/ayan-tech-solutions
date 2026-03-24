@@ -37,10 +37,10 @@ export default function Navigation({ onContactOpen }: NavigationProps) {
       className="fixed top-0 left-0 right-0 z-50 border-b border-white/20 shadow-md"
       style={{ backgroundColor: "#0a1628" }}
     >
-      <div className="container max-w-7xl mx-auto px-6 py-3 flex items-start justify-between">
+      <div className="max-w-7xl mx-auto px-2 py-3 flex items-start justify-between">
         <button
           type="button"
-          className="flex items-start gap-2 bg-transparent mt-0"
+          className="flex items-start gap-2 bg-transparent mt-0 pl-0"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <img
@@ -59,7 +59,7 @@ export default function Navigation({ onContactOpen }: NavigationProps) {
               data-ocid="nav.link"
               onClick={(e) => handleNavClick(e, link.href)}
               className="font-bold tracking-wide text-white/90 transition-colors hover:text-red-500"
-              style={{ fontSize: "42px" }}
+              style={{ fontSize: "36px" }}
             >
               {link.label}
             </a>
@@ -109,7 +109,7 @@ export default function Navigation({ onContactOpen }: NavigationProps) {
                     data-ocid="nav.link"
                     onClick={(e) => handleNavClick(e, link.href)}
                     className="font-bold text-white/80 hover:text-red-500 transition-colors"
-                    style={{ fontSize: "42px" }}
+                    style={{ fontSize: "36px" }}
                   >
                     {link.label}
                   </a>

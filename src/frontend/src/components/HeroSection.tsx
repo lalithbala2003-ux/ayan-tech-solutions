@@ -38,26 +38,24 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-24">
+      <div className="relative z-10 w-full px-8 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="max-w-3xl"
         >
           <h1
             style={{
-              fontFamily: "'Abril Fatface', cursive",
-              fontWeight: 900,
+              fontFamily: "'Barlow', 'Arial', sans-serif",
+              fontWeight: 700,
               letterSpacing: "0.01em",
-              fontSize: "100px",
+              fontSize: "clamp(60px, 9vw, 120px)",
               lineHeight: 1.0,
               marginBottom: "2rem",
+              whiteSpace: "nowrap",
             }}
           >
-            <span className="text-white">Ayan Tech</span>
-            <br />
-            <span style={{ color: "#006994" }}>Solutions</span>
+            <span className="text-white">Ayan Tech Solutions</span>
           </h1>
         </motion.div>
       </div>

@@ -9,9 +9,9 @@ const stats = [
 
 export default function StatsBar() {
   return (
-    <section className="section-dark py-16">
+    <section className="py-16 bg-white border-y border-border">
       <div className="container max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x lg:divide-white/20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x lg:divide-border">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -24,7 +24,7 @@ export default function StatsBar() {
               <p className="font-display text-5xl font-bold text-accent-gold mb-2">
                 {stat.value}
               </p>
-              <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
+              <p className="text-foreground/60 text-sm uppercase tracking-wider font-medium">
                 {stat.label}
               </p>
             </motion.div>

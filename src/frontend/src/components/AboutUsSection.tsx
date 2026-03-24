@@ -14,31 +14,9 @@ export default function AboutUsSection() {
           <p className="text-accent-gold text-xs font-semibold uppercase tracking-[0.3em] mb-3">
             Who We Are
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">
+          <h2 className="font-display text-[36px] font-bold text-primary leading-tight">
             About Us.
           </h2>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          className="max-w-4xl"
-        >
-          <p className="font-bold text-lg md:text-xl leading-relaxed text-primary mb-4">
-            Empowering Success
-          </p>
-          <p className="font-bold text-base md:text-lg leading-relaxed text-primary">
-            Ayan Tech Solutions engineers intelligent, future-ready solutions
-            that fuel growth, streamline operations, and accelerate digital
-            transformation. With over 16 years of deep expertise in SAP services
-            and a growing portfolio of digital health solutions, Ayan Tech
-            bridges technology with real-world outcomes. Whether you need an ERP
-            solution, or precision billing or transformative healthcare systems.
-            If you can envision it, Ayan Tech Solutions can build it.{" "}
-            <strong>Empowering Success</strong>
-          </p>
         </motion.div>
       </div>
     </section>

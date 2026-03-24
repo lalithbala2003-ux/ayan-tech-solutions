@@ -28,8 +28,8 @@ function AppContent() {
 
       <main>
         <HeroSection />
-        <StatsBar />
         <AboutUsSection />
+        <StatsBar />
         <ServicesSection />
         <PromoVideoSection />
         <CaseStudiesSection caseStudies={caseStudies} />
